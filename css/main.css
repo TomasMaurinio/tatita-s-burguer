@@ -1,0 +1,289 @@
+div.encabezado {
+  background-color: #769FB6;
+  text-align: center; }
+  div.encabezado strong {
+    font-family: 'Rampart One', cursive;
+    color: #E2DBBE;
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0; }
+
+nav ul {
+  background-color: #769FB6;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0; }
+  nav ul li {
+    font-family: 'Lobster', cursive;
+    color: #E2DBBE;
+    list-style: none;
+    padding: 22px; }
+    nav ul li a {
+      text-decoration: none;
+      color: #E2DBBE; }
+    nav ul li a:hover {
+      color: #0d5c8a; }
+
+footer {
+  background-color: #769FB6;
+  margin: 0px; }
+  footer .container-footer {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr); }
+    footer .container-footer div.redes {
+      display: flex;
+      justify-content: center; }
+      footer .container-footer div.redes li {
+        font-family: 'Lobster', cursive;
+        color: #E2DBBE;
+        list-style: none;
+        padding: 6px; }
+        footer .container-footer div.redes li a {
+          text-decoration: none;
+          color: #161616; }
+        footer .container-footer div.redes li a:hover {
+          color: #0d5c8a; }
+      footer .container-footer div.redes ul {
+        margin: 0;
+        padding: 0; }
+    footer .container-footer .horarios h5 {
+      font-family: 'Lobster', cursive;
+      text-align: center; }
+    footer .container-footer .horarios .horarios-texto {
+      font-family: 'Lobster', cursive;
+      text-align: center;
+      padding: 0;
+      margin: 0; }
+    footer .container-footer div.menu {
+      display: flex;
+      justify-content: center; }
+      footer .container-footer div.menu li {
+        font-family: 'Lobster', cursive;
+        color: #E2DBBE;
+        list-style: none;
+        padding: 6px; }
+        footer .container-footer div.menu li a {
+          text-decoration: none;
+          color: #161616; }
+        footer .container-footer div.menu li a:hover {
+          color: #0d5c8a; }
+      footer .container-footer div.menu ul {
+        margin: 0;
+        padding: 0; }
+  footer div.mapa {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0; }
+    footer div.mapa iframe {
+      width: 80%;
+      height: 140px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  border: 0;
+  padding: 0; }
+
+div.fondo {
+  background-color: #E2DBBE; }
+
+div.burguer-fondo {
+  background-image: url(../img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 66vh;
+  margin: auto; }
+
+h1 {
+  font-family: 'Rampart One', cursive;
+  color: #E2DBBE;
+  text-align: center;
+  background-color: #769FB6;
+  margin: 0 0 12px 0; }
+
+.mas-pedidas {
+  margin: 0 200px 0 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 50px; }
+  .mas-pedidas .burguer {
+    width: 200px;
+    margin: 0 50px 0 50px; }
+    .mas-pedidas .burguer img {
+      width: 160px;
+      height: 160px;
+      display: block;
+      margin: 0 auto; }
+    .mas-pedidas .burguer .burguer-info h2 {
+      text-align: center;
+      margin: 0;
+      font-size: 26px; }
+    .mas-pedidas .burguer .burguer-info h3 {
+      text-align: center;
+      font-weight: 400;
+      font-size: 16px;
+      padding: 10px;
+      margin: 0; }
+  .mas-pedidas .burguer:hover {
+    transform: scale(1.3, 1.3); }
+
+.barra {
+  background-color: #769FB6;
+  margin: 12px 0 0 0; }
+
+div.carousel {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center; }
+  div.carousel img {
+    width: 1100px;
+    height: 480px; }
+
+.burguer-container {
+  margin: 50px 200px 50px 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 20px; }
+  .burguer-container .burguer {
+    width: 200px;
+    margin: 0 50px 0 50px; }
+    .burguer-container .burguer img {
+      width: 160px;
+      height: 160px;
+      display: block;
+      margin: 0 auto; }
+    .burguer-container .burguer .burguer-info h2 {
+      text-align: center;
+      margin: 0;
+      font-size: 26px; }
+    .burguer-container .burguer .burguer-info h3 {
+      text-align: center;
+      font-weight: 400;
+      font-size: 16px;
+      padding: 10px;
+      margin: 0; }
+  .burguer-container .burguer:hover {
+    transform: scale(1.3, 1.3); }
+
+div.bebida-container {
+  margin: 50px 200px 50px 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 20px; }
+  div.bebida-container img {
+    width: 160px;
+    height: 160px;
+    display: block;
+    margin: 0 auto; }
+  div.bebida-container .bebida-info h2 {
+    text-align: center;
+    margin: 0;
+    padding: 4px; }
+
+p {
+  text-align: center; }
+
+form {
+  display: block;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 200px 0 200px; }
+  form .boton {
+    align-self: center;
+    text-align: center;
+    background-color: #769FB6;
+    width: 100px;
+    margin: 24px 0 0 0; }
+
+@media only screen and (max-width: 1024px) {
+  strong {
+    font-family: 'Rampart One', cursive;
+    color: #E2DBBE;
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #769FB6;
+    margin: 0; }
+  .fondo-div {
+    height: 0px;
+    padding-bottom: 56.25%;
+    position: relative; }
+    .fondo-div .burguer-fondo {
+      background-image: url(../img/fondo-media-queries.jpeg);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%; }
+  div.mas-pedidas {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    div.mas-pedidas .burguer {
+      margin: 0; }
+  div.carousel {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center; }
+    div.carousel img {
+      width: 500px;
+      height: 180px; }
+  div.burguer-container {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    div.burguer-container .burguer {
+      margin: 0; }
+  div.bebida-container {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  form {
+    display: block;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px 0 50px; }
+    form .boton {
+      align-self: center;
+      text-align: center;
+      background-color: #769FB6;
+      width: 100px;
+      margin: 6px 0 0 0; }
+  div.mapa iframe {
+    width: 80%;
+    height: 80px; } }

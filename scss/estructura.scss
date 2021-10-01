@@ -1,0 +1,279 @@
+@import "variables";
+@import "header";
+@import "footer";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+div.fondo {
+    background-color: $color-uno;
+}
+
+div.burguer-fondo {
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 66vh;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Rampart One', cursive;
+    color: $color-uno;
+    text-align: center;
+    background-color: $color-dos;
+    margin: 0 0 12px 0;
+}
+
+.mas-pedidas {
+    margin: 0 200px 0 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 50px;
+
+    .burguer {
+        width: 200px;
+        margin: 0 50px 0 50px;
+
+        img {
+            width: 160px;
+            height: 160px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .burguer-info {
+            h2 {
+                text-align: center;
+                margin: 0;
+                font-size: 26px;
+            }
+
+            h3 {
+                text-align: center;
+                font-weight: 400;
+                font-size: 16px;
+                padding: 10px;
+                margin: 0;
+            }
+        }
+    }
+
+    .burguer:hover {
+        transform: scale(1.3, 1.3);
+    }
+}
+
+.barra {
+    background-color: $color-dos;
+    margin: 12px 0 0 0;
+}
+
+div.carousel {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 1100px;
+        height: 480px;
+    }
+}
+
+.burguer-container {
+    margin: 50px 200px 50px 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+
+    .burguer {
+        width: 200px;
+        margin: 0 50px 0 50px;
+
+        img {
+            width: 160px;
+            height: 160px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .burguer-info {
+            h2 {
+                text-align: center;
+                margin: 0;
+                font-size: 26px;
+            }
+
+            h3 {
+                text-align: center;
+                font-weight: 400;
+                font-size: 16px;
+                padding: 10px;
+                margin: 0;
+            }
+        }
+    }
+
+    .burguer:hover {
+        transform: scale(1.3, 1.3);
+    }
+}
+
+div.bebida-container {
+    margin: 50px 200px 50px 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 20px;
+
+    img {
+        width: 160px;
+        height: 160px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .bebida-info {
+        h2 {
+            text-align: center;
+            margin: 0;
+            padding: 4px;
+        }
+    }
+}
+
+p {
+    text-align: center;
+}
+
+form {
+    display: block;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 200px 0 200px;
+
+    .boton {
+        align-self: center;
+        text-align: center;
+        background-color: $color-dos;
+        width: 100px;
+        margin: 24px 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    strong {
+        font-family: 'Rampart One', cursive;
+        color: $color-uno;
+        font-size: 3em;
+        font-weight: 800;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: $color-dos;
+        margin: 0;
+    }
+
+    .fondo-div {
+        height: 0px;
+        padding-bottom: 56.25%;
+        position: relative;
+
+        .burguer-fondo {
+            background-image: url(../img/fondo-media-queries.jpeg);
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    div.mas-pedidas {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .burguer {
+            margin: 0;
+        }
+    }
+
+    div.carousel {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 500px;
+            height: 180px;
+        }
+    }
+
+    div.burguer-container {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .burguer {
+            margin: 0;
+        }
+    }
+
+    div.bebida-container {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    form {
+        display: block;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 50px 0 50px;
+    
+        .boton {
+            align-self: center;
+            text-align: center;
+            background-color: $color-dos;
+            width: 100px;
+            margin: 6px 0 0 0;
+        }
+    }
+
+    div.mapa iframe {
+        width: 80%;
+        height: 80px;
+    }
+}

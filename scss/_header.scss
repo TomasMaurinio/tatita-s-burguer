@@ -1,0 +1,43 @@
+div.encabezado {
+    background-color: $color-dos;
+    text-align: center;
+
+    strong {
+        font-family: 'Rampart One', cursive;
+        color: $color-uno;
+        font-size: 4em;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin: 0;
+    }
+}
+
+
+
+nav {
+    ul {
+        background-color: $color-dos;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+
+        li {
+
+            font-family: 'Lobster', cursive;
+            color: $color-uno;
+            list-style: none;
+            padding: 22px;
+
+            a {
+                text-decoration: none;
+                color: $color-uno;
+            }
+
+            a:hover{
+                color: $color-tres;
+            }
+        }
+    }
+}

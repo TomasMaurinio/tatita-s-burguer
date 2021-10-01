@@ -1,0 +1,91 @@
+footer {
+    background-color: $color-dos;
+    margin: 0px;
+
+    .container-footer {
+        padding: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+
+        div.redes {
+
+            display: flex;
+            justify-content: center;
+
+            li {
+                font-family: 'Lobster', cursive;
+                color: $color-uno;
+                list-style: none;
+                padding: 6px;
+
+                a {
+                    text-decoration: none;
+                    color: $color-cuatro;
+                }
+
+                a:hover {
+                    color: $color-tres;
+                }
+            }
+
+            ul {
+                margin: 0;
+                padding: 0;
+            }
+        }
+        
+        .horarios {
+            h5 {
+                font-family: 'Lobster', cursive;
+                text-align: center;
+            }
+
+            .horarios-texto {
+                font-family: 'Lobster', cursive;
+                text-align: center;
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        div.menu {
+
+            display: flex;
+            justify-content: center;
+
+            li {
+                font-family: 'Lobster', cursive;
+                color: $color-uno;
+                list-style: none;
+                padding: 6px;
+
+                a {
+                    text-decoration: none;
+                    color: $color-cuatro;
+                }
+
+                a:hover {
+                    color: $color-tres;
+                }
+            }
+
+            ul {
+                margin: 0;
+                padding: 0;
+                }
+            }
+    }
+
+    div.mapa {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+
+        iframe {
+            width: 80%;
+            height: 140px;
+        }
+    }
+}
