@@ -33,6 +33,7 @@ h1 {
     text-align: center;
     background-color: $color-dos;
     margin: 0 0 12px 0;
+    padding: 0 0 10px 0;
 }
 
 .mas-pedidas {
@@ -78,6 +79,7 @@ h1 {
 .barra {
     background-color: $color-dos;
     margin: 12px 0 0 0;
+    height: 56.45px;
 }
 
 div.carousel {
@@ -159,6 +161,17 @@ p {
     text-align: center;
 }
 
+.div-local{
+    padding-bottom: 16px;
+    text-align: center;
+
+    .img-local{
+        width: 50%;
+        height: auto;
+        border-radius: 15px;
+    }
+}
+
 form {
     display: block;
     width: 70%;
@@ -176,15 +189,17 @@ form {
 }
 
 @media only screen and (max-width: 1024px) {
-    strong {
-        font-family: 'Rampart One', cursive;
-        color: $color-uno;
-        font-size: 3em;
-        font-weight: 800;
-        text-align: center;
-        text-transform: uppercase;
+    div.encabezado{
         background-color: $color-dos;
-        margin: 0;
+        
+        strong {
+            font-family: 'Rampart One', cursive;
+            color: $color-uno;
+            font-size: 3em;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin: 0;
+        }
     }
 
     .fondo-div {
@@ -254,6 +269,17 @@ form {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .div-local{
+        padding-bottom: 16px;
+        text-align: center;
+    
+        .img-local{
+            width: 80%;
+            height: auto;
+            border-radius: 15px;
+        }
     }
 
     form {

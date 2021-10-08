@@ -1,35 +1,127 @@
-div.encabezado {
+.header {
   background-color: #769FB6;
-  text-align: center; }
-  div.encabezado strong {
-    font-family: 'Rampart One', cursive;
-    color: #E2DBBE;
-    font-size: 4em;
-    font-weight: 900;
-    text-transform: uppercase;
-    margin: 0; }
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 100%;
+  z-index: 3; }
 
-nav ul {
-  background-color: #769FB6;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+.header ul {
   margin: 0;
-  padding: 0; }
-  nav ul li {
-    font-family: 'Lobster', cursive;
+  padding: 0;
+  list-style: none;
+  overflow: hidden; }
+
+.header li a {
+  font-family: 'Rampart One', cursive;
+  display: block;
+  color: #272727;
+  padding: 20px 20px;
+  text-decoration: none; }
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+.header .logo {
+  font-family: 'Rampart One', cursive;
+  color: #E2DBBE;
+  display: block;
+  float: left;
+  font-size: 22px;
+  padding: 12px 20px;
+  text-decoration: none; }
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out; }
+
+/* menu icon */
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  /*esto no es un error, funciona en pantalla de movil*/
+  float: right;
+  /*==================================================*/
+  padding: 28px 20px;
+  position: relative;
+  user-select: none; }
+
+.header .menu-icon .navicon {
+  background: #593928;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px; }
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #ed8a2e;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%; }
+
+.header .menu-icon .navicon:before {
+  top: 5px; }
+
+.header .menu-icon .navicon:after {
+  top: -5px; }
+
+/* menu btn */
+.header .menu-btn {
+  display: none; }
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 340px; }
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent; }
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg); }
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg); }
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0; }
+
+@media only screen and (max-width: 768px) {
+  .header ul {
+    background-color: #E2DBBE; }
+  .header li a {
+    padding: 15px;
+    border-bottom: 1px dotted #ddd; } }
+
+@media only screen and (min-width: 768px) {
+  .menu-wrapper {
+    background: #769FB6;
+    height: 55px;
+    line-height: 55px;
+    width: 100%; }
+  .header li {
+    float: left; }
+  .header .logo {
+    line-height: 1; }
+  .header li a {
     color: #E2DBBE;
-    list-style: none;
-    padding: 22px; }
-    nav ul li a {
-      text-decoration: none;
-      color: #E2DBBE; }
-    nav ul li a:hover {
-      color: #0d5c8a; }
+    padding: 0px 30px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2); }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none; }
+  .header .menu-icon {
+    display: none; } }
 
 footer {
   background-color: #769FB6;
-  margin: 0px; }
+  margin: 10px 0 0 0; }
   footer .container-footer {
     padding: 30px;
     display: grid;
@@ -110,7 +202,8 @@ h1 {
   color: #E2DBBE;
   text-align: center;
   background-color: #769FB6;
-  margin: 0 0 12px 0; }
+  margin: 0 0 12px 0;
+  padding: 0 0 10px 0; }
 
 .mas-pedidas {
   margin: 0 200px 0 200px;
@@ -141,7 +234,8 @@ h1 {
 
 .barra {
   background-color: #769FB6;
-  margin: 12px 0 0 0; }
+  margin: 12px 0 0 0;
+  height: 56.45px; }
 
 div.carousel {
   width: 80%;
@@ -198,6 +292,14 @@ div.bebida-container {
 p {
   text-align: center; }
 
+.div-local {
+  padding-bottom: 16px;
+  text-align: center; }
+  .div-local .img-local {
+    width: 50%;
+    height: auto;
+    border-radius: 15px; }
+
 form {
   display: block;
   width: 70%;
@@ -212,15 +314,15 @@ form {
     margin: 24px 0 0 0; }
 
 @media only screen and (max-width: 1024px) {
-  strong {
-    font-family: 'Rampart One', cursive;
-    color: #E2DBBE;
-    font-size: 3em;
-    font-weight: 800;
-    text-align: center;
-    text-transform: uppercase;
-    background-color: #769FB6;
-    margin: 0; }
+  div.encabezado {
+    background-color: #769FB6; }
+    div.encabezado strong {
+      font-family: 'Rampart One', cursive;
+      color: #E2DBBE;
+      font-size: 3em;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin: 0; }
   .fondo-div {
     height: 0px;
     padding-bottom: 56.25%;
@@ -272,6 +374,13 @@ form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
+  .div-local {
+    padding-bottom: 16px;
+    text-align: center; }
+    .div-local .img-local {
+      width: 80%;
+      height: auto;
+      border-radius: 15px; }
   form {
     display: block;
     width: 70%;
